@@ -67,7 +67,7 @@
 <div class = "navbar navbar-expand-lg navbar-light bg-white pt-5" id="nav">
     <div class="container">
     <a href="#" class="navbar-brand"><img src="Images/Logo_KFP.png" alt="KFP" width="75" height="75px"></a>
-       <button  class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+       <button  class="navbar-toggler" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
        <div class="collapse navbar-collapse flex-row justify-content-end" id="nav">
        <ul class="navbar-nav">
             <li class="navbar-item">
@@ -149,28 +149,28 @@
                                     Please provide a message.
                                 </div>
                             </div>
-    
-                            <script>
-                                (function () {
-                                    'use strict'
-                                    var forms = document.querySelectorAll('.needs-validation')
-                        
-                                    // Loop over them and prevent submission
-                                    Array.prototype.slice.call(forms)
-                                        .forEach(function (form) {
-                                            form.addEventListener('submit', function (event) {
-                                                if (!form.checkValidity()) {
-                                                    event.preventDefault()
-                                                    event.stopPropagation()
-                                                }
-                                                form.classList.add('was-validated')
-                                            }, false)
-                                        })
-                                })()
-                            </script>
+                            <button type="submit" class="btn btn-primary">Submit</button>
                         </form>
-                    </div>
             </div>
+        </div>
+         <!-- Success Message -->
+    <div id="successMessage" class="alert alert-success mt-4 form-message" role="alert">
+        Your message has been sent successfully!
+                    </div>    
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+
+        document.getElementById('successMessage').style.display = 'block';
+
+        document.getElementById('contactForm').reset();
+    });
+</script>
             
             <div class="col-md-6 img-container">
                 <div class="col-md-6">
