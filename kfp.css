@@ -232,3 +232,11 @@ footer a {
 footer a:hover {
   text-decoration: underline; 
 }
+
+.img-thumbnail {
+  cursor: pointer;
+}
+
+.form-message {
+  display: none;
+}
