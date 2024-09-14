@@ -10,13 +10,15 @@
     "></script>
     <link rel="stylesheet" href="kfp.css">
     <link rel="icon" type="image/png" href="Images/Logo_KFP.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
     <!-- Link Swiper's CSS -->
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="kfp.js"></script>
+    <script src="script.js"></script>
     <title>The best Mangoes in Cambodia - Kirirom Food Production</title>
     <style>
       .dropdown:hover .dropdown-menu {
@@ -80,7 +82,7 @@ background-color: #f8f9fa;
             </div>
         </div>
     </div>
-
+  
     <body>
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
@@ -101,72 +103,100 @@ background-color: #f8f9fa;
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
     </div>    
+      
 
-      <script>
-        var swiper = new Swiper(".mySwiper", {
-          spaceBetween: 30,
-          centeredSlides: true,
-          autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
-        </script>
-
-<div onload="getPics()">
 <div class="container h-100 d-flex justify-content-center align-items-center container mt-5">
   <div class="row justify-content-center">
     <h1>PRODUCT FEATURE</h1>
       <div class="imagecarousel col-auto">
-          <img src="Images/5.png" alt="5" class="img-fluid">
-          <img src="Images/6.png" alt="6" class="img-fluid">
-          <img src="Images/7.png" alt="7" class="img-fluid">
-          <img src="Images/5.png" alt="5" class="img-fluid">
-          <img src="Images/6.png" alt="6" class="img-fluid">
-          <img src="Images/7.png" alt="7" class="img-fluid">
-          <img src="Images/5.png" alt="5" class="img-fluid">
-          <img src="Images/6.png" alt="6" class="img-fluid">
-          <img src="Images/7.png" alt="7" class="img-fluid">
+          <img src="Images/5.png" alt="5" class="img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-src="Images/5.png">
+          <img src="Images/6.png" alt="6" class="img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-src="Images/6.png">
+          <img src="Images/7.png" alt="7" class="img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-src="Images/7.png">
+          <img src="Images/5.png" alt="5" class="img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-src="Images/5.png">
+          <img src="Images/6.png" alt="6" class="img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-src="Images/6.png">
+          <img src="Images/7.png" alt="7" class="img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-src="Images/7.png">
+          <img src="Images/5.png" alt="5" class="img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-src="Images/5.png">
+          <img src="Images/6.png" alt="6" class="img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-src="Images/6.png">
+          <img src="Images/7.png" alt="7" class="img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-src="Images/7.png">
         </div>
        </div>
       </div>
-  </div>
 </div>
-<div id="fullpage" onclick="this.style.display='none';"></div>
 
-<div onload="getPics()">
   <div class="container h-100 d-flex justify-content-center align-items-center container mt-5">
     <div class="row justify-content-center">
       <h1>CERTIFICATION</h1>
         <div class="imagecarousel col-auto">
-            <img src="Images/13.png" alt="13" class="img-fluid">
-            <img src="Images/14.png" alt="14" class="img-fluid">
-            <img src="Images/15.png" alt="15" class="img-fluid">
-            <img src="Images/16.png" alt="16" class="img-fluid">
-            <img src="Images/17.png" alt="17" class="img-fluid">
-            <img src="Images/18.png" alt="18" class="img-fluid">
-            <img src="Images/21.png" alt="21" class="img-fluid">
-            <img src="Images/13.png" alt="13" class="img-fluid">
-            <img src="Images/14.png" alt="14" class="img-fluid">
-            <img src="Images/15.png" alt="15" class="img-fluid">
-            <img src="Images/16.png" alt="16" class="img-fluid">
-            <img src="Images/17.png" alt="17" class="img-fluid">
-            <img src="Images/18.png" alt="18" class="img-fluid">
-            <img src="Images/21.png" alt="21" class="img-fluid">
+            <img src="Images/13.png" alt="13" class="img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-src="Images/13.png">
+            <img src="Images/14.png" alt="14" class="img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-src="Images/14.png">
+            <img src="Images/15.png" alt="15" class="img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-src="Images/15.png">
+            <img src="Images/16.png" alt="16" class="img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-src="Images/16.png">
+            <img src="Images/17.png" alt="17" class="img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-src="Images/17.png">
+            <img src="Images/18.png" alt="18" class="img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-src="Images/18.png">
+            <img src="Images/21.png" alt="21" class="img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-src="Images/21.png">
+            <img src="Images/13.png" alt="13" class="img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-src="Images/13.png">
+            <img src="Images/14.png" alt="14" class="img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-src="Images/14.png">
+            <img src="Images/15.png" alt="15" class="img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-src="Images/15.png">
+            <img src="Images/16.png" alt="16" class="img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-src="Images/16.png">
+            <img src="Images/17.png" alt="17" class="img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-src="Images/17.png">
+            <img src="Images/18.png" alt="18" class="img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-src="Images/18.png">
+            <img src="Images/21.png" alt="21" class="img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-src="Images/21.png">
           </div>
          </div>
         </div>
     </div>
   </div>
-  <div id="fullpage" onclick="this.style.display='none';"></div>
+
+  <!-- Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="imageModalLabel">Image</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <img src="" id="modalImage" class="img-fluid" alt="Full Size Image">
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  $('#imageModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget); 
+  var imageSrc = button.data('src');  
+  var modal = $(this);
+  modal.find('.modal-body #modalImage').attr('src', imageSrc);
+});
+  </script>
+
 
 
   <div class="container my-5">
